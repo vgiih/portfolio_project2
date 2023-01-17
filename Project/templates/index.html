@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div><div class="logo1"></div></div>
+			<div><div class="logo2"></div></div>
+			<div class="clear"></div>
+		</div>
+	</header>
+
+	<section class="cover-form">
+		<div class="container bg">
+			<div class="form-container">
+				<h2>Morbi consectetur tellus pretium lorem sagittis malesuada</h2>
+				<form>
+					<div class="form-wrapper" style="margin-top: 10px">
+						<p>* Nome Completo:</p>
+						<input type="text" name="nome" placeholder="Nome" required>
+					</div>
+
+					<div class="form-wrapper">
+						<p>* E-mail:</p>
+						<input type="text" name="email" placeholder="E-mail" required>
+					</div>
+
+					<div class="form-wrapper">
+						<p>* Telefone:</p>
+						<input type="text" name="telefone" placeholder="Telefone" required>
+					</div>
+
+					<div class="form-wrapper">
+						<input type="submit" name="submit" value="Enviar">
+					</div>
+
+					<div class="form-wrapper">
+						<p>* Campos Obrigatórios</p>
+					</div>
+				</form>
+			</div>
+			<div class="clear"></div>
+			<div class="arrow"></div>
+		</div>
+	</section>
+
+	<section class="call">
+		<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+		<h3>Morbi consectetur tellus pretium lorem sagittis malesuada</h3>
+	</section>
+
+	<section class="mosaico">
+		<div class="container">
+			<div class="flex-mosaico">
+				<div style="background-image: url('./static/images/mosaico1.jpg')" class="item1"></div>
+				<div class="item2">
+					<p>Etiam facilisis nisl vitae felis commodo placerat sed sednibh. Cras lacinia egestas augue quis pellentesque. Duis vel est non metus hendrerit varius. Quisque placerat aliquet erat eget commodo.</p>
+				</div>
+			</div>
+
+			<div class="flex-mosaico" style="flex-direction: row-reverse;">
+				<div style="background-image: url('./static/images/mosaico2.jpg')" class="item1"></div>
+				<div class="item2">
+					<p>Etiam facilisis nisl vitae felis commodo placerat sed sednibh. Cras lacinia egestas augue quis pellentesque. Duis vel est non metus hendrerit varius. Quisque placerat aliquet erat eget commodo.</p>
+				</div>
+			</div>
+
+			<div class="flex-mosaico">
+				<div style="background-image: url('./static/images/mosaico3.jpg')" class="item1"></div>
+				<div class="item2">
+					<p>Etiam facilisis nisl vitae felis commodo placerat sed sednibh. Cras lacinia egestas augue quis pellentesque. Duis vel est non metus hendrerit varius. Quisque placerat aliquet erat eget commodo.</p>
+				</div>
+			</div>
+
+			<div class="flex-mosaico" style="flex-direction: row-reverse;">
+				<div style="background-image: url('./static/images/mosaico4.jpg')" class="item1"></div>
+				<div class="item2">
+					<p>Etiam facilisis nisl vitae felis commodo placerat sed sednibh. Cras lacinia egestas augue quis pellentesque. Duis vel est non metus hendrerit varius. Quisque placerat aliquet erat eget commodo.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div style="margin-bottom: 20px;">
+		<p>Todos os direitos reservados</p>
+		<p>Contato 4002-8922</p>
+		</div>
+
+		<hr>
+
+		<img src="{{ url_for('static', filename='images/logo1.png') }}">
+	</footer>
+
+</body>
+</html>
